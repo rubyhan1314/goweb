@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<students version="1">
+    <student>
+        <studentName>韩茹</studentName>
+        <age>31</age>
+        <sex>female</sex>
+        <books>
+            <book>
+                <bookName>红与黑</bookName>
+                <price>55.8</price>
+            </book>
+            <book>
+                <bookName>呼啸山庄</bookName>
+                <price>99</price>
+            </book>
+        </books>
+    </student>
+    <student>
+        <studentName>王二狗</studentName>
+        <age>30</age>
+        <sex>male</sex>
+        <books>
+            <book>
+                <bookName>十万个为啥</bookName>
+                <price>22.8</price>
+            </book>
+            <book>
+                <bookName>从入门到放弃</bookName>
+                <price>68</price>
+            </book>
+        </books>
+    </student>
+</students>

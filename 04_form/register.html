@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>验证表单</title>
+	</head>
+	<body>
+		<h1>注册信息</h1>
+		<form action="http://127.0.0.1:8080/register" method="post">
+			用户名：
+			<input type="text" name="username" id="username" />
+			<br />
+			密&nbsp&nbsp&nbsp码：
+			<input type="password" name="pwd" id="pwd" />
+			<br />
+            中文名：
+            <input type="text" name="zhname" id="zhname" />
+            <br />
+            英文名：
+            <input type="text" name="enname" id="enname" />
+            <br />
+            年&nbsp&nbsp&nbsp龄：
+            <input type="text" name="age" id="age" />
+            <br />
+			性&nbsp&nbsp&nbsp&nbsp别：
+			<input type="radio" name="sex" value="male" checked="checked"/>男
+			<input type="radio" name="sex" value="female"/>女
+			<input type="radio" name="sex" value="other"/>其他
+			<br />
+            邮&nbsp&nbsp&nbsp箱：
+            <input type="text" name="email" id="email" />
+            <br />
+
+            手机号码：
+            <input type="text" name="mobile" id="mobile" />
+            <br />
+            身份证号：
+            <input type="text" name="usercard" id="usercard">
+            <br>
+			爱&nbsp&nbsp&nbsp好：
+			<input type="checkbox" name="hobby" value="game" checked="checked"/>游戏
+			<input type="checkbox" name="hobby" value="girl" />女人
+			<input type="checkbox" name="hobby" value="money" />金钱
+			<input type="checkbox" name="hobby" value="power" />权利
+			<br />
+			学&nbsp&nbsp&nbsp历：
+			<!--
+            	selected="selected"
+            -->
+			<select name="xueli">
+				<option>--请选择--</option>
+				<option value="xiaoxue">小学</option>
+				<option value="chuzhong">初中</option>
+				<option value="gaozhong">高中</option>
+				<option value="dazhuan" >大专</option>
+				<option value="benke">本科</option>
+				<option value="shuoshi">硕士</option>
+				<option value="boshi">博士</option>
+				<option value="lieshi">烈士</option>
+			</select>
+			<br />
+			头&nbsp&nbsp&nbsp像：
+			<input type="file" name="myfile" />
+			<br />
+			个人简介：
+			<br />
+			<textarea rows="8" cols="70"></textarea>
+			<br />
+			<!--
+            	按钮：带事件，不带事件
+            		事件：发生了某一件事
+            		带事件：按钮被点击，会触发某一件事
+            		不带事件：按钮被点击，页面没有反应。配合JavaScript
+            		
+            	button:无事件
+            	image：无事件
+            	reset：有事件，清空表单数据
+            	submit：有事件，提交表单
+            		当submit按钮被点击，触发form表单中action属性的路径(服务器地址)
+            		
+            	提交方式：
+            	get：默认
+            		词意：获取，获得
+            		url？username=zhangsan&pwd=123456&sex=female..
+            		url：请求的路径地址
+            		？
+            			前是请求路径
+            			 后本次请求提交的数据
+            			传递的数据：采用名值对的形式
+            			参数名=参数值&参数名=参数值。。。
+            		
+            		不安全：数据暴露了
+            		传递少量的数据
+            		容易乱码
+            		
+            	post：
+            		词意：邮政邮局
+            		数据打包之后，传递给服务端
+            		数据安全
+            		可以传递大量的数据
+            		不容易乱码
+            		
+            -->
+            <input type="button" value="按钮" />
+            <input type="reset" value="重置"/>
+            <input type="image" src="img/qq.gif" />
+            <input type="submit" value="提交" />
+		</form>
+	</body>
+</html>
